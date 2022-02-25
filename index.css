@@ -1,18 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
 
 body {
     background-color: black; 
-     
+     height:100%;
+     display:flex;
+     flex-direction: column;
+     justify-content: space-around;
 }
 
 #navbar {
     display:flex;
     justify-content: space-between;
-    background-color: gray;
+    background-color: black;
+    
 }
 
-
+.fa-brands {
+    margin: 8px;
+    font-size: 2rem;
+    color: white;
+    background:black;
+}
 
 #links {
     display:inline;
@@ -21,32 +29,23 @@ body {
     justify-content: center;
 }
 
-#linkedin-pic {
-    width:60px;
-    height:60px;
-    
-}
 
 
-#github-pic {
-    margin-top: 8px;
-    width:40px;
-    height:40px;
-    
-}
+
 
 
 #logo {
-    width:50px;
-    height:50px;
+    width:5rem;
+    height:5rem;
 }
 
 main {
     color: white;
-    font-size: 1.6em;
+    font-size: 1.4em;
     text-align: center;
     width: 50%;
     margin: 6em auto;
+    height: 12rem;
 }
 
 main a {
@@ -57,13 +56,30 @@ main a {
 }
 
 #about, #work, #contact {
-    color:red;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color:limegreen;
+    font-family: 'Source Code Pro', monospace;
 }
 
 #about:hover, #work:hover, #contact:hover {
     color:white;
 }
 
+footer {
+    color:white;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+
+    
+}
+
+footer p {
+    width:70%;
+    padding-top:1rem;
+    padding-bottom: 0;
+    border-top: 1px solid gray;
+    margin-top: 2rem;
+    font-size: 0.6rem;
+}
 
 

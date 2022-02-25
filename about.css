@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+
 main {
-    color: red;
+    color: limegreen;
+    font-family: 'Source Code Pro', monospace;
+    background-color:rgba(30, 30, 30);
+    padding:3rem;
+    font-weight: 900;
+    border: 5px solid green;
+
 }
+
