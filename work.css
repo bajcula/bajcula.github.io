@@ -2,18 +2,138 @@ body {
     background-color: black;
 }
 
+/*** NAVBAR ***/
+#navbar {
+    display:flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.fa-brands {
+    margin: 8px;
+    font-size: 2rem;
+    color: white;
+    background:black;
+}
+.fa-solid {
+    margin: 10px;
+    margin-top: 12px;
+    font-size: 1.8rem;
+    color: white;
+    background:transparent;
+}
+#links {
+    display:inline;
+    margin: 18px;
+    display:flex;
+    justify-content: center;
+}
+#logo {
+    width:5rem;
+    height:5rem;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.container > div {
+	width: 50%;
+}
+.carousel-indicators {
+	text-align: center;
+	margin: 0 auto;
+	margin-top:-60px;
+	opacity: 0.3;
+}
+.carousel-indicators button {
+	width: 10%;
+	height: 10px;
+	border-radius: 10%;
+	border: 2px solid black;
+}
+.carousel-indicators button:hover {
+	background-color: black;
+	border: none;
+	border-radius: 10%;		
+}
+.container > h1 {
+    font-family: 'Source Code Pro', monospace;
+	font-size: 1rem;
+	margin: 2rem auto;
+    margin-top:4rem;
+	color: limegreen;
+	text-shadow: 1px 1px #f2cd99;
+	letter-spacing: 2px;
+}
 
-#github {
-    border: 1px solid limegreen;
-    padding: 1rem 2rem 0rem 2rem;
-    width: 80%;
-    margin: 10rem auto;
-    text-align: center;
+/*** CAROUSEL ***/
+.carousel-container {
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
 }
-#github img {
-    width:100%;
+.carousel-images {
+	width: 75%;
+	background: #fa8d8e;
+	padding: 10px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	box-shadow: 2px 2px #f2cd99;
 }
-#github p {
-    color:white;
-    font-size:1.2rem;
+.carousel-images img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	display: none;
+}
+
+	
+
+.carousel-button {
+	align-self: center;
+	background: #f2cd99;
+	color: #888;
+	padding: 10px;
+	border-radius: 50%;
+	text-align: center;
+	box-shadow: 1px 1px #fa8d8e;
+}
+.carousel-button:hover {
+	cursor: pointer;
+	background: #fa8d8e;
+	box-shadow: 1px 1px #f2cd99;
+	color: white;
+}
+
+.carousel-images img:first-of-type {
+	display:block
+}
+
+#text {
+	background: #fa8d8e;
+	width:200px;
+	text-align: center;
+	color: black;
+	padding-bottom: 7px;
+	font-weight: 700;
+}
+
+
+@media (max-width: 1024px)  {
+	.carousel-indicators button {
+		width: 10%;
+		height: 0.5rem;
+		border-radius: 10%;
+		border: 2px solid black;
+	}
+}
+
+@media (max-width: 760px)  {
+	.carousel-indicators {
+		display: none;
+	}
+}
+
+.hidden {
+	display:none;
 }

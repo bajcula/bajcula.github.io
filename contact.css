@@ -1,3 +1,34 @@
 main {
     color: blue;
 }
+
+#navbar {
+    display:flex;
+    justify-content: space-between;
+    background-color: black;
+    
+}
+
+.fa-brands {
+    margin: 8px;
+    font-size: 2rem;
+    color: white;
+    background:black;
+}
+
+#links {
+    display:inline;
+    margin: 18px;
+    display:flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+#logo {
+    width:5rem;
+    height:5rem;
+}
