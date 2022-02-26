@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    margin: 0;
 }
 
 main {
@@ -38,4 +39,35 @@ main {
 #logo {
     width:5rem;
     height:100%;
+}
+
+/***FOOTER***/
+footer {
+    color:white;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+
+footer p {
+    width: 60ch;
+    padding-top:1rem;
+    padding-bottom: 0;
+    border-top: 1px solid gray;
+    margin-top: 0.4rem;
+    font-size: 0.6rem;
+    font-family: 'Source Code Pro', monospace;
+    align-self: center;
+}
+
+footer h6 {
+    width:70%;   
+    margin-top: -0.2rem;
+    font-size: 0.8rem;
+    font-family: 'Source Code Pro', monospace;
+    align-self: center;
 }
