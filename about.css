@@ -40,9 +40,8 @@ body {
     background:transparent;
 }
 
-#links {
-    
-    margin-right: 20px;
+#links {  
+    margin: 10px;
     display:flex;
     justify-content: center;
     background: transparent;
@@ -84,7 +83,7 @@ footer h6 {
 }
 
 aside {
-    color: lime;
+    color: limegreen;
    
 }
 main {
@@ -94,8 +93,9 @@ main {
 }
 #skills {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap:10px;
     margin:10px;
+    text-align: center;
 }
 
