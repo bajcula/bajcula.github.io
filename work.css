@@ -151,7 +151,7 @@ h1 {
 }
 
 
-@media screen and (min-width:760px) {
+@media screen and (min-width:768px) {
 	.container {
 		display:flex;
 	}
@@ -162,6 +162,21 @@ h1 {
 
 }
 
+@media screen and (min-width:480px) {
+	footer {
+		position:static;
+	}
+}
+
+
+@media screen and (min-width:768px)  {
+    footer {
+        position:fixed;
+    }
+    main {
+        max-width: 30%;
+    }
+}
 
 .hidden {
 	display:none;

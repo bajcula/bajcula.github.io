@@ -3,7 +3,7 @@
 body {
     background-color: black;
     margin: 0;
-
+    
 }
 
 
@@ -102,6 +102,8 @@ main {
     gap:10px;
     margin:10px;
     text-align: center;
+    margin: 0 auto;
+    justify-items: center ;
 }
 
 #soft-div ul {
@@ -127,6 +129,18 @@ main {
         position: static;
         bottom:0;
     }
+    #about-me {
+        font-size: 1.4rem;
+
+    }
+    #skills {
+       
+        justify-items: center;
+    }
+    #tech-div, #soft-div {
+        height: 350px;
+        width: 350px;
+    }
 
 }
 @media (min-width: 768px) {
@@ -141,3 +155,40 @@ main {
         padding: 5rem;
     }
 }
+
+@media (max-width: 281px) {
+    #about-me {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 480px) 
+  and (max-device-width: 768px) {
+    #tech-div, #soft-div {
+        height: 300px;
+        width: 300px;
+    }
+  }
+  @media only screen 
+  and (min-device-width: 769px) 
+  and (max-device-width: 1024px) {
+    #tech-div, #soft-div {
+        height: 300px;
+        width: 300px;
+    }
+    #skills {
+        margin: 0 auto;
+    }
+  }
+
+  @media only screen 
+  and (min-device-width: 281px) 
+  and (max-device-width: 480px) {
+    #tech-div, #soft-div {
+        
+        width: 220px;
+    }
+  }
+
+
