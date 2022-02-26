@@ -2,10 +2,10 @@
 let currentImageIndex = 0;
 
 let textArray = [
-    "Corgi looking cute",
-    "Corgi in a hotdog",
-    "Corgi with googles",
-    "Corgi in a boat"
+    "PROJECT 1",
+    "PROJECT 2",
+    "PROJECT 3",
+    "PROJECT 4"
 ]
 
 const showNextPic = () => {
