@@ -33,7 +33,7 @@ body {
 
 #links {
     
-    margin-right: 20px;
+    margin: 10px;
     display:flex;
     justify-content: center;
     background: transparent;
@@ -41,7 +41,8 @@ body {
 
 #logo {
     width:5rem;
-    height:100%;
+    height:80%;
+    margin: 10%;
 }
 
 
@@ -78,6 +79,10 @@ main a {
 
 
 /***FOOTER***/
+#footerdiv {
+    bottom:0;
+}
+
 footer {
     color:white;
     text-align: center;
@@ -115,7 +120,26 @@ footer h6 {
 @media screen and (min-width:768px)  {
     footer {
         position:fixed;
+    }
+    main {
+        max-width: 30%;
+    }
+}
 
+/*FIGURE OUT IF YOU CAN FOR BELOW 350PX*/
+@media screen and (max-width:350px)  {
+    main {
+        min-width: 45%;
+    }
+}
+@media screen and (min-width:768px)  {
+    main {
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width:1024px)  {
+    main {
+        font-size: 2.6rem;
     }
 }
 

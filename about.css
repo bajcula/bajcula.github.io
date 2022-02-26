@@ -3,16 +3,19 @@
 body {
     background-color: black;
     margin: 0;
+
 }
 
-main {
+
+#about-me {
     color: limegreen;
     font-family: 'Source Code Pro', monospace;
-    background-color:rgba(30, 30, 30);
-    padding:3rem;
-    font-weight: 900;
+    background-color:rgba(30 30 30);
+    padding:2rem;
+    
     border: 1px solid green;
     text-align:start;
+    margin: 2rem;
 }
 
 #navbar {
@@ -57,8 +60,7 @@ footer {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
-    bottom:0;
+    position: static;
     width: 100%;
 }
 
@@ -81,5 +83,19 @@ footer h6 {
     align-self: center;
 }
 
-
+aside {
+    color: lime;
+   
+}
+main {
+    
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+}
+#skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+    margin:10px;
+}
 
