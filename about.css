@@ -3,15 +3,15 @@
 body {
     background-color: black;
     margin: 0;
-    
 }
 
 
 #about-me {
     color: limegreen;
     font-family: 'Source Code Pro', monospace;
-    background-color:rgba(30 30 30);
+    background:linear-gradient(darkgreen 0 2%, rgba(30 30 30) 20% 80%, darkgreen 98% 100%);
     padding:2rem;
+    padding-top: 70px;
     border: 3px double limegreen;
     text-align:start;
     margin: 2rem;
@@ -100,8 +100,8 @@ main {
 #skills {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    gap:10px;
-    margin:10px;
+    gap:6px;
+    margin:5px;
     text-align: center;
     margin: 0 auto;
     justify-items: center ;
@@ -116,8 +116,9 @@ main {
     margin: 35px;
     border-radius: 50px;
     box-shadow: -2px -2px limegreen;
-    padding:15px;
-    line-height: 1.3rem;
+    padding:10px;
+    line-height: 1.1rem;
+    text-align: center;
 }
 
 
@@ -131,7 +132,7 @@ main {
         bottom:0;
     }
     #about-me {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
 
     }
     #skills {
@@ -190,9 +191,65 @@ main {
   and (min-device-width: 281px) 
   and (max-device-width: 480px) {
     #tech-div, #soft-div {
-        
-        width: 220px;
+        width:200px;
     }
   }
 
+  @media only screen and (orientation: portrait)
+  and (min-device-width: 481px) 
+  and (max-device-width: 1024px) {
+    #tech-div, #soft-div {
+        height:280px;
+        width: 260px;
+    }
+  }
+  @media only screen and (orientation: landscape)
+  and (min-device-width: 1024px) {
+    #tech-div, #soft-div {
+        height:240px;
+        width: 220px;
+    }
+  }
+  
+  .scene {
+    width: 200px;
+    height: 260px;
+    perspective: 600px;
+    cursor:pointer;
+  }
 
+  .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+  }
+
+  .card__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+  }
+
+  .card__face--back {
+    transform: rotateY( 180deg );
+  }
+
+  .card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+ 
+  .card__face--back i {
+      color: rgb(120, 214, 255);
+      font-size: 40px;
+      padding-top:25px;
+  }
+
+  
+.card__face--front i {
+    font-size: 20px;
+    color:rgb(120, 214, 255);
+}
