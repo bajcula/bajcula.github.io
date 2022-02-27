@@ -9,10 +9,10 @@ body {
 #about-me {
     color: limegreen;
     font-family: 'Source Code Pro', monospace;
-    background:linear-gradient(darkgreen 0 2%, rgba(30 30 30) 20% 80%, darkgreen 98% 100%);
+    background:linear-gradient(darkgreen 0 1%, rgba(30 30 30) 20% 80%, darkgreen 99% 100%);
     padding:2rem;
     padding-top: 70px;
-    border: 3px double limegreen;
+    border: 5px double darkgreen;
     text-align:start;
     margin: 2rem;
     
@@ -99,7 +99,6 @@ main {
 }
 #skills {
     display: grid;
-    grid-template-rows: 1fr 1fr;
     gap:6px;
     margin:5px;
     text-align: center;
@@ -113,10 +112,10 @@ main {
 
 #tech-div, #soft-div {
     background-color:rgba(30 30 30);
-    margin: 35px;
+    margin: 10px;
     border-radius: 50px;
     box-shadow: -2px -2px limegreen;
-    padding:10px;
+    padding:15px;
     line-height: 1.1rem;
     text-align: center;
 }
@@ -252,4 +251,14 @@ main {
 .card__face--front i {
     font-size: 20px;
     color:rgb(120, 214, 255);
+}
+
+@media screen and (min-width:1280px) {
+    .fa-brands, .fa-solid {
+        font-size: 3rem;
+        margin: 0.8vh;
+    }
+    #links {
+        margin: 10px;
+    }
 }

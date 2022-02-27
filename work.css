@@ -253,3 +253,13 @@ footer h6 {
 		font-size: 3ch;
 	}
 }
+
+@media screen and (min-width:1280px) {
+    .fa-brands, .fa-solid {
+        font-size: 3rem;
+		margin: 0.8vh;
+    }
+    #links {
+        margin: 10px;
+    }
+}

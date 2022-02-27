@@ -138,25 +138,22 @@ footer h6 {
     main {
         font-size: 2.4rem;
     }
+    
 }
 
 @media screen and (min-width:1280px)  {
     main {
         font-size: 2.6rem;
-        margin: 30vh auto 30vh auto;
-    }
-    #navbar {
-        height:10vh;
+        margin: 40vh auto 40vh auto;
+        margin-top: 30vh;
     }
     .fa-brands, .fa-solid {
-        font-size: 5vh;
-        margin: 1.2vh;
+        font-size: 3rem;
+        margin: 0.8vh;
     }
-    main {
-        margin-top: 15rem;
-    }
+
     #links {
-        margin: 2vh;
+        margin: 10px;
     }
     footer {
         position:static;
