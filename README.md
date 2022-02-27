@@ -6,7 +6,7 @@ Project #1 at General Assembly.
 Personal website displaying my projects and who I am as a Software Engineer.
 
 GitHub link for the website:
-https://angelafrancisco.netlify.app/
+bajcula.github.io
 
 *HTML
 *CSS
