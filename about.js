@@ -5,5 +5,5 @@ const flipping = () => {
 }
 
 $(".card").on("click", flipping)
-console.log($(".card"))
+
 
