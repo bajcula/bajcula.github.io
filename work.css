@@ -54,7 +54,7 @@ body {
 	align-items: center;
 }
 .container > div {
-	width: 50%;
+	width: 70%;
 }
 .carousel-indicators {
 	text-align: center;
@@ -78,7 +78,7 @@ body {
 
 h1 {
     font-family: 'Source Code Pro', monospace;
-	font-size: 1rem;
+	font-size: 5vh;
 	margin: 4rem auto 1rem auto;	
 	color: limegreen;
 	text-shadow: 1px 1px gray;
@@ -227,6 +227,29 @@ footer h6 {
    
 }
 
+@media screen and (orientation: landscape) and (min-width:481px) {
+	footer {
+		position: fixed;
+		margin-top:100px;
+	}
+}
 
-/*TRYING TO FIGURE OUT GALAXY FOLD AT 280px*/
+@media screen and (min-width:1024px) {
+	footer {
+		position: static;
+	}
+	.container {
+		margin: 0 auto 20vh auto;
+	}
+}
 
+@media screen and (orientation: portrait) {
+	h1 {
+		font-size: 2ch;
+	}
+}
+@media screen and (orientation: portrait) and (min-width:768px) {
+	h1 {
+		font-size: 3ch;
+	}
+}

@@ -16,6 +16,7 @@ body {
     text-align:start;
     margin: 2rem;
     
+    
 }
 
 #navbar {
@@ -168,6 +169,9 @@ main {
     #tech-div, #soft-div {
         height: 300px;
         width: 300px;
+    }
+    #about-me {
+        margin: 5rem;
     }
   }
   @media only screen 

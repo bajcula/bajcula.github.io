@@ -88,8 +88,8 @@ footer {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    position: static;
-   
+    position: absolute;
+    bottom:0;
     width: 100%;
 }
 
@@ -143,6 +143,7 @@ footer h6 {
 @media screen and (min-width:1280px)  {
     main {
         font-size: 3rem;
+        margin: 30vh auto 30vh auto;
     }
     #navbar {
         height:10vh;
@@ -155,5 +156,34 @@ footer h6 {
     #links {
         margin: 2vh;
     }
+    footer {
+        position:static;
+        
+    }
 }
 
+@media screen and (orientation:landscape) {
+    footer {
+        position: static;
+    }
+}
+
+@media screen and (orientation: portrait) and (min-width:768px) {
+    main {
+        font-size: 2rem;
+        
+    }
+    #about:hover, #work:hover, #contact:hover {
+        color:white;
+        font-size: 1.1em;
+        font-weight: 900;
+        text-shadow: 4px 4px 8px whitesmoke;
+    }
+}
+
+
+@media screen and (min-width:1440px) {
+    main {
+        font-size: 4rem;
+    }
+}
