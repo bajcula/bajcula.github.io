@@ -9,14 +9,19 @@ body {
 #about-me {
     color: limegreen;
     font-family: 'Source Code Pro', monospace;
-    background:linear-gradient(darkgreen 0 1%, rgba(30 30 30) 20% 80%, darkgreen 99% 100%);
+    background-color: rgba(30 30 30);
     padding:2rem;
-    padding-top: 70px;
-    border: 5px double darkgreen;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* border: 5px double darkgreen; */
     text-align:start;
     margin: 2rem;
+    box-shadow: -10px -10px darkgreen;
     
-    
+}
+
+#about-me:hover {
+    background:linear-gradient(darkgreen 0 1%, rgba(30 30 30) 20% 80%, darkgreen 99% 100%);
 }
 
 #navbar {
@@ -110,7 +115,8 @@ main {
     background-color:rgba(30 30 30);
     margin: 10px;
     border-radius: 50px;
-    box-shadow: -2px -2px limegreen;
+    box-shadow: -4px -4px limegreen;
+    
     padding:15px;
     line-height: 1.1rem;
     text-align: center;
@@ -156,6 +162,8 @@ main {
 @media (max-width: 281px) {
     #about-me {
         font-size: 0.6rem;
+        padding-top: 120px;
+        
     }
 }
 
@@ -168,6 +176,8 @@ main {
     }
     #about-me {
         margin: 5rem;
+        padding-bottom: 15%;
+        padding-top: 15%;
     }
   }
   @media only screen 
@@ -204,7 +214,18 @@ main {
         height:340px;
         width: 320px;
     }
+
   }
+
+  @media screen and (min-width:1280px) {
+    .fa-brands, .fa-solid {
+        font-size: 3rem;
+        margin: 0.8vh;
+    }
+    #links {
+        margin: 10px;
+    }
+}
   
   .scene {
     width: 200px;
@@ -228,10 +249,12 @@ main {
     width: 100%;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    padding-top: 6%;
   }
 
   .card__face--back {
-    transform: rotateY( 180deg );
+    transform: rotateY(180deg);
   }
 
   .card.is-flipped {
@@ -250,12 +273,3 @@ main {
     color:rgb(120, 214, 255);
 }
 
-@media screen and (min-width:1280px) {
-    .fa-brands, .fa-solid {
-        font-size: 3rem;
-        margin: 0.8vh;
-    }
-    #links {
-        margin: 10px;
-    }
-}

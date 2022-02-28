@@ -60,3 +60,25 @@ $("#image4button").on('click', () => {
     changeImageFunc(4)
 })
 
+//CODEWARS API REQ
+async function codewarsRank() {
+
+    const urlString = "https://www.codewars.com/api/v1/users/bajcula"
+    const response = await fetch(urlString)
+    const data = await response.json()
+    const myDataUserName = data.username
+    $("#codewars").append(`<h3>Codewars username: ${myDataUserName}</h3>
+    <p>
+    Honor points: ${data.honor}<br>
+    Clan: ${data.clan}<br>
+    Overall rank: ${data.ranks.overall.rank}<br>
+    Overall score: ${data.ranks.overall.score}<br>
+    Languages: <span id='lang'></span><br>
+    Code challenges completed: ${data.codeChallenges.totalCompleted}
+    </p>`)
+    const dataLanguages = data.ranks.languages;
+    let myStr = Object.keys(dataLanguages).join(',')
+    $("#lang").append(myStr.toUpperCase())
+}
+
+codewarsRank()

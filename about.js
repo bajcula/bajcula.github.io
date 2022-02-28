@@ -1,9 +1,13 @@
 console.log("about js running")
 
-const flipping = () => {
-    $(".card").toggleClass("is-flipped")
+const flipping1 = () => {
+    $("#1").toggleClass("is-flipped")
 }
 
-$(".card").on("click", flipping)
+$("#1").on("click", flipping1)
 
+const flipping2 = () => {
+    $("#2").toggleClass("is-flipped")
+}
 
+$("#2").on("click", flipping2)

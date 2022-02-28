@@ -203,7 +203,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    bottom:0;
+	bottom:0;
     width: 100%;
 }
 
@@ -243,6 +243,10 @@ span {
 	h1 {
 		font-size: 2ch;
 	}
+	footer {
+		position: static;
+		
+	}
 }
 @media screen and (orientation: portrait) and (min-width:768px) {
 	h1 {
@@ -258,4 +262,15 @@ span {
     #links {
         margin: 10px;
     }
+}
+
+#codewars {
+	background-color: rgba(30 30 30);
+    color:lime;
+	border: 1px dashed limegreen;
+	margin: 10px; 
+	text-align: center;
+}
+#lang {
+	font-size:14px;
 }
