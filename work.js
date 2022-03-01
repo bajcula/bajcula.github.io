@@ -66,8 +66,8 @@ async function codewarsRank() {
     const urlString = "https://www.codewars.com/api/v1/users/bajcula"
     const response = await fetch(urlString)
     const data = await response.json()
-    const myDataUserName = data.username
-    $("#codewars").append(`<h3>Codewars username: ${myDataUserName}</h3>
+    const myDataUserName = data.username.toUpperCase()
+    $("#codewars").append(`<h3>Codewars name: ${myDataUserName}</h3>
     <p>
     Honor points: ${data.honor}<br>
     Clan: ${data.clan}<br>

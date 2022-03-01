@@ -124,6 +124,75 @@ main {
     text-align: center;
 }
 
+
+.scene {
+    width: 200px;
+    height: 260px;
+    perspective: 600px;
+    cursor:pointer;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+  }
+
+  .card__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    padding-top: 6%;
+  }
+
+  .card__face--back {
+    transform: rotateY(180deg);
+  }
+
+  .card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+ 
+  .card__face--back i {
+      color: rgb(120, 214, 255);
+      font-size: 40px;
+      padding-top:25px;
+  }
+
+  
+.card__face--front i {
+    font-size: 20px;
+    color:rgb(120, 214, 255);
+}
+
+#download-resume {
+    display: inline;
+    margin: 30px auto 30px auto;
+    position: center;
+    background-color: rgba(30 30 30);
+    color: lime;
+    height: 80px;
+    border: none;
+    padding: 20px;
+    cursor:pointer
+}
+
+#download-resume:hover {
+    box-shadow: 0px 5px 45px 10px rgba(140, 255, 0, 0.5)
+}
+
+#download-resume:active {
+    color: white;
+    box-shadow: 0px 5px 45px 10px white;
+}
+
+
 @media (max-width: 280px) {
     #about-me {
         font-size: 0.6rem;
@@ -164,6 +233,9 @@ and (max-device-width: 480px) {
         margin: 6rem;
         border: 3px double limegreen;
         padding: 5rem;
+    }
+    #download-resume {
+        height: 200px;
     }
 
 }
@@ -244,71 +316,5 @@ and (max-device-width: 480px) {
     }
 }
   
-  .scene {
-    width: 200px;
-    height: 260px;
-    perspective: 600px;
-    cursor:pointer;
-  }
-
-  .card {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    transform-origin: center right;
-  }
-
-  .card__face {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    padding-top: 6%;
-  }
-
-  .card__face--back {
-    transform: rotateY(180deg);
-  }
-
-  .card.is-flipped {
-    transform: translateX(-100%) rotateY(-180deg);
-  }
- 
-  .card__face--back i {
-      color: rgb(120, 214, 255);
-      font-size: 40px;
-      padding-top:25px;
-  }
-
-  
-.card__face--front i {
-    font-size: 20px;
-    color:rgb(120, 214, 255);
-}
-
-#download-resume {
-    display: inline;
-    margin: 30px auto 30px auto;
-    position: center;
-    background-color: rgba(30 30 30);
-    color: lime;
-    height: 80px;
-    border: none;
-    padding: 20px;
-    cursor:pointer
-}
-
-#download-resume:hover {
-    box-shadow: 0px 5px 45px 10px rgba(140, 255, 0, 0.5)
-}
-
-#download-resume:active {
-    color: white;
-    box-shadow: 0px 5px 45px 10px white;
-}
 
 

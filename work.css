@@ -5,6 +5,7 @@ body {
 	font-family: 'Source Code Pro', monospace;
 	text-align: center;
 	margin: 0;
+	height:100vh;
 }
 
 /*** NAVBAR ***/
@@ -123,6 +124,9 @@ h1 {
 	box-shadow: 1px 1px lime;
 	color: black;
 }
+.carousel-button:active {
+	box-shadow: 2px 2px white;
+}
 
 .carousel-images img:first-of-type {
 	display:block
@@ -139,6 +143,114 @@ h1 {
 	box-shadow: 1px 1px lime;
 	border-radius: 0 0 15px 15px;
 }
+
+
+
+
+.hidden {
+	display:none;
+}
+
+#projects {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	gap:1rem;
+	padding:1rem;
+}
+
+#projects img {
+	width: 100%;
+	height: auto;
+}
+
+/***FOOTER***/
+footer {
+    color:white;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: static;
+	bottom:0;
+    width: 100%;
+	margin-top: 80px;
+}
+
+footer p {
+    width: 60%;
+    padding-top: 5px;
+    padding-bottom: 0;
+    border-top: 1px dashed gray;
+    margin-top: 0.4rem;
+    font-size: 0.4rem;
+    font-family: 'Source Code Pro', monospace;
+    align-self: center;
+}
+
+span {
+    font-size: 0.6rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#codewars {
+	background-color: rgba(30 30 30);
+    color:lime;
+	border: 1px dashed limegreen;
+	margin: 50px 30px 30px 30px; 
+	text-align: center;
+}
+#codewars:hover {
+	border: 3px double lime;
+}
+
+#lang {
+	font-size:14px;
+}
+
+
+
+
+@media screen and (min-width:1024px) {
+
+	.container {
+		margin: 0 auto 20vh auto;
+	}
+}
+
+@media screen and (orientation: portrait) {
+	h1 {
+		font-size: 2ch;
+	}
+
+}
+@media screen and (orientation: portrait) and (min-width:768px) {
+	h1 {
+		font-size: 3ch;
+	}
+
+}
+@media screen and (orientation: portrait) and (min-width:481px) {
+	footer {
+		position:static;
+		bottom:0;
+	}
+}
+
+
+
+
+@media screen and (min-width:1280px) {
+    .fa-brands, .fa-solid {
+        font-size: 3rem;
+		margin: 0.8vh;
+    }
+    #links {
+        margin: 10px;
+    }
+}
+
+
 
 
 @media (max-width: 1024px)  {
@@ -170,107 +282,8 @@ h1 {
 
 
 @media screen and (min-width:768px)  {
-    footer {
-        position:fixed;
-    }
+
     main {
         max-width: 30%;
     }
-}
-
-.hidden {
-	display:none;
-}
-
-#projects {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-columns: 1fr 1fr;
-	gap:1rem;
-	padding:1rem;
-}
-
-#projects img {
-	width: 100%;
-	height: auto;
-}
-
-/***FOOTER***/
-footer {
-    color:white;
-    text-align: center;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-	bottom:0;
-    width: 100%;
-}
-
-footer p {
-    width: 60%;
-    padding-top: 5px;
-    padding-bottom: 0;
-    border-top: 1px dashed gray;
-    margin-top: 0.4rem;
-    font-size: 0.4rem;
-    font-family: 'Source Code Pro', monospace;
-    align-self: center;
-}
-
-span {
-    font-size: 0.6rem;
-    font-family: 'Source Code Pro', monospace;
-}
-
-@media screen and (orientation: landscape) and (min-width:481px) {
-	footer {
-		position: fixed;
-		margin-top:100px;
-	}
-}
-
-@media screen and (min-width:1024px) {
-	footer {
-		position: static;
-	}
-	.container {
-		margin: 0 auto 20vh auto;
-	}
-}
-
-@media screen and (orientation: portrait) {
-	h1 {
-		font-size: 2ch;
-	}
-	footer {
-		position: static;
-		
-	}
-}
-@media screen and (orientation: portrait) and (min-width:768px) {
-	h1 {
-		font-size: 3ch;
-	}
-}
-
-@media screen and (min-width:1280px) {
-    .fa-brands, .fa-solid {
-        font-size: 3rem;
-		margin: 0.8vh;
-    }
-    #links {
-        margin: 10px;
-    }
-}
-
-#codewars {
-	background-color: rgba(30 30 30);
-    color:lime;
-	border: 1px dashed limegreen;
-	margin: 10px 30px 20px 30px; 
-	text-align: center;
-}
-#lang {
-	font-size:14px;
 }
