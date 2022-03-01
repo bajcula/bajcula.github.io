@@ -11,3 +11,4 @@ const flipping2 = () => {
 }
 
 $("#2").on("click", flipping2)
+

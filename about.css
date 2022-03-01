@@ -3,6 +3,7 @@
 body {
     background-color: black;
     margin: 0;
+    text-align: center;
 }
 
 
@@ -61,6 +62,8 @@ body {
 }
 
 
+
+
 /***FOOTER***/
 footer {
     color:white;
@@ -94,7 +97,6 @@ aside {
    
 }
 main {
-    
     display:grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -122,6 +124,66 @@ main {
     text-align: center;
 }
 
+@media (max-width: 280px) {
+    #about-me {
+        font-size: 0.6rem;
+        padding-top: 120px;
+        
+    }
+}
+
+@media only screen 
+and (min-device-width: 281px) 
+and (max-device-width: 480px) {
+  #tech-div, #soft-div {
+      width:200px;
+  }
+}
+
+@media only screen 
+  and (min-device-width: 480px) 
+  and (max-device-width: 768px) {
+    #tech-div, #soft-div {
+        height: 300px;
+        width: 300px;
+    }
+    #about-me {
+        margin: 5rem;
+        padding-bottom: 15%;
+        padding-top: 15%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #skills {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 30px;
+    }
+    #about-me {
+        margin: 6rem;
+        border: 3px double limegreen;
+        padding: 5rem;
+    }
+
+}
+
+@media only screen 
+  and (min-device-width: 769px) 
+  and (max-device-width: 1024px) {
+    #tech-div, #soft-div {
+        height: 300px;
+        width: 300px;
+    }
+    #skills {
+        margin: 0 auto;
+        align-items: center;
+        height: 500px;
+    }
+
+  }
+
+
 
 @media (min-width: 1024px)  {
 
@@ -146,59 +208,13 @@ main {
     }
 
 }
-@media (min-width: 768px) {
-    #skills {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: none;
-        margin: 30px;
-    }
-    #about-me {
-        margin: 6rem;
-        border: 3px double limegreen;
-        padding: 5rem;
-    }
-}
 
-@media (max-width: 281px) {
-    #about-me {
-        font-size: 0.6rem;
-        padding-top: 120px;
-        
-    }
-}
 
-@media only screen 
-  and (min-device-width: 480px) 
-  and (max-device-width: 768px) {
-    #tech-div, #soft-div {
-        height: 300px;
-        width: 300px;
-    }
-    #about-me {
-        margin: 5rem;
-        padding-bottom: 15%;
-        padding-top: 15%;
-    }
-  }
-  @media only screen 
-  and (min-device-width: 769px) 
-  and (max-device-width: 1024px) {
-    #tech-div, #soft-div {
-        height: 300px;
-        width: 300px;
-    }
-    #skills {
-        margin: 0 auto;
-    }
-  }
 
-  @media only screen 
-  and (min-device-width: 281px) 
-  and (max-device-width: 480px) {
-    #tech-div, #soft-div {
-        width:200px;
-    }
-  }
+
+
+  
+
 
   @media only screen and (orientation: portrait)
   and (min-device-width: 481px) 
@@ -207,6 +223,7 @@ main {
         height:280px;
         width: 260px;
     }
+    
   }
   @media only screen and (orientation: landscape)
   and (min-device-width: 1024px) {
@@ -272,4 +289,26 @@ main {
     font-size: 20px;
     color:rgb(120, 214, 255);
 }
+
+#download-resume {
+    display: inline;
+    margin: 30px auto 30px auto;
+    position: center;
+    background-color: rgba(30 30 30);
+    color: lime;
+    height: 80px;
+    border: none;
+    padding: 20px;
+    cursor:pointer
+}
+
+#download-resume:hover {
+    box-shadow: 0px 5px 45px 10px rgba(140, 255, 0, 0.5)
+}
+
+#download-resume:active {
+    color: white;
+    box-shadow: 0px 5px 45px 10px white;
+}
+
 
