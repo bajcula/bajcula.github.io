@@ -6,26 +6,27 @@ body {
     display:flex;
     flex-direction: column;
     margin: 0;
+    justify-content: space-between;
 }
 
 #navbar {
     display:flex;
     justify-content: space-between;
-    
     background-image: url(images/matrix-background.jpeg);
     background-size: cover ;
 }
 
 .fa-brands {
-    margin: 8px;
-    font-size: 2rem;
+    margin: 4px;
+    margin-top: 10px;
+    font-size: 1.6rem;
     color: white;
     background:transparent;
 }
 .fa-solid {
-    margin: 10px;
+    margin: 4px;
     margin-top: 12px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: white;
     background:transparent;
 }
@@ -34,22 +35,33 @@ body {
     
     margin: 10px;
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
     background: transparent;
+}
+#nav-logo {
+    display:flex;
+    align-items: center;
+    margin-left: 10px;
 }
 
 #logo {
-    width:10rem;
-    height:50%;
-    margin: 20px;
-    background:linear-gradient(darkgreen 0 1%, lime 20% 80%, darkgreen 99% 100%);
+    align-self: center;
+    width:7rem;
+    height:60%;
+    margin: 6px;
+    
+}
+
+#logo-container {
+
+    background:linear-gradient(darkgreen 0 1%, rgba(30,30,30) 20% 80%, darkgreen 99% 100%);
 }
 
 main {
     color: white;
     font-size: 1.2em;
     text-align: center;
-    margin: 25vh auto;
+    margin: 20vh auto;
     height: 100%;
     width:100%;
     
@@ -143,7 +155,7 @@ span {
 @media screen and (min-width:1280px)  {
     main {
         font-size: 2.6rem;
-        margin: 40vh auto;
+        margin: 20vh auto;
         margin-top: 30vh;
     }
     .fa-brands, .fa-solid {
@@ -158,6 +170,10 @@ span {
         position:static;
         
     }
+    #logo {
+        width:10rem;
+    }
+
 }
 
 @media screen and (orientation:landscape) {

@@ -5,7 +5,10 @@ body {
 	font-family: 'Source Code Pro', monospace;
 	text-align: center;
 	margin: 0;
+	display:flex;
+	flex-direction: column;
 	height:100vh;
+	justify-content: space-between;
 }
 
 /*** NAVBAR ***/
@@ -19,15 +22,16 @@ body {
 }
 
 .fa-brands {
-    margin: 8px;
-    font-size: 2rem;
+    margin: 4px;
+    margin-top: 10px;
+    font-size: 1.6rem;
     color: white;
     background:transparent;
 }
 .fa-solid {
-    margin: 10px;
+    margin: 4px;
     margin-top: 12px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: white;
     background:transparent;
 }
@@ -36,14 +40,21 @@ body {
     
     margin: 10px;
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
     background: transparent;
+}
+#nav-logo {
+    display:flex;
+    align-items: center;
+    margin-left: 10px;
 }
 
 #logo {
-    width:5rem;
-    height:80%;
-    margin: 10%;
+    align-self: center;
+    width:7rem;
+    height:60%;
+    margin: 6px;
+    background:linear-gradient(darkgreen 0 1%, rgba(30,30,30) 20% 80%, darkgreen 99% 100%);
 }
 
 
@@ -80,7 +91,7 @@ body {
 h1 {
     font-family: 'Source Code Pro', monospace;
 	font-size: 5vh;
-	margin: 4rem auto 1rem auto;	
+	margin: 3rem auto 1rem auto;	
 	color: limegreen;
 	text-shadow: 1px 1px gray;
 	letter-spacing: 1px;
@@ -98,7 +109,7 @@ h1 {
 	padding: 10px;
 	border-radius: 10px;
 	box-sizing: border-box;
-	box-shadow: 2px 2px #50C878;;
+	box-shadow: 2px 2px #50C878;
 }
 .carousel-images img {
 	width: 100%;
@@ -125,7 +136,7 @@ h1 {
 	color: black;
 }
 .carousel-button:active {
-	box-shadow: 2px 2px white;
+	box-shadow: 5px 5px 5px 2px whitesmoke;
 }
 
 .carousel-images img:first-of-type {
@@ -161,7 +172,7 @@ h1 {
 
 #projects img {
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 
 /***FOOTER***/
@@ -174,7 +185,7 @@ footer {
     position: static;
 	bottom:0;
     width: 100%;
-	margin-top: 80px;
+	
 }
 
 footer p {
@@ -182,7 +193,7 @@ footer p {
     padding-top: 5px;
     padding-bottom: 0;
     border-top: 1px dashed gray;
-    margin-top: 0.4rem;
+    margin-top: 0.6rem;
     font-size: 0.4rem;
     font-family: 'Source Code Pro', monospace;
     align-self: center;
@@ -197,7 +208,7 @@ span {
 	background-color: rgba(30 30 30);
     color:lime;
 	border: 1px dashed limegreen;
-	margin: 50px 30px 30px 30px; 
+	margin: 50px 30px; 
 	text-align: center;
 }
 #codewars:hover {
@@ -207,6 +218,18 @@ span {
 #lang {
 	font-size:14px;
 }
+
+#github {
+	margin: 30px;
+	margin-top:0;
+	display:none;
+	color:lime;
+	background-color:rgba(30 30 30);
+	padding: 20px;
+	padding-top:5px;
+	border: 1px dashed lime;
+}
+
 
 
 
@@ -269,6 +292,12 @@ span {
 	}
 	#projects div {
 		display:none;
+	}
+	#github {
+		display:inline-block;
+	}
+	#github:hover {
+		border: 3px double lime;
 	}
 
 
