@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="contact.js"></script>
+    <script defer src="contact.js"></script>
 </head>
 
 <body>
@@ -27,24 +27,41 @@
         </div>
     </nav>
     <main>
-        <h2>Let's make something great!</h2>
-        <p>
-            I am seeking out opportunities to collaborate with companies / agencies / individuals, not just work for
-            them.<br>
-            I want to bring my web development experience to the table so we can work together towards creating
-            something unique.
-        </p>
-        <section id="email-me">
-            <p>Feel free to reach me through my email adress: branislavtodorovic59@gmail.com</p>
-        </section>
-        <section id="linkedin-me">
-            <p>Or if you want to connect on LinkedIn: www.linkedin.com/in/brantodorovic</p>
-        </section>
-        <button id="message">MESSAGE ME</button>
-        <div id="message-modal">
-
+        <div id="text">
+            <h2>Let's make something great!</h2>
+            <p>
+                I am seeking out opportunities to collaborate with companies / agencies / individuals, not just work for
+                them.<br>
+                I want to bring my web development experience to the table so we can work together towards creating
+                something unique.<br><br>Feel free to reach me through any of the following platforms:
+            </p>
         </div>
+        <section id="contact-me">
+            <a href="mailto:branislavtodorovic59@gmail.com">@gmail.com</a>
+            <a href="https://www.linkedin.com/in/branislav-todorovic-ba4492228/" target="_blank">LinkedIn</a>
+            <button id="message">QUICK MESSAGE</button>
+        </section>
     </main>
+
+    <div id="message-modal" class="hidden">
+        <div id="modal-container">
+            <div class="modal-name">
+                <input type="text" id="person-name" placeholder="Your name">
+            </div>
+            <div class="modal-email">
+                <input type="text" id="person-email" placeholder="Your email">
+            </div>
+            <div class="modal-message">
+                <input type="text" id="person-message" placeholder="Type your message here...">
+            </div>
+            <div class="modal-sub-button">
+                <button id="modal-submit">SUBMIT</button>
+            </div>
+        </div>
+        <button id="close-modal">
+            X
+        </button>
+    </div>
     <footer>
         <p>Designed by: <span>bran[i].slav</span></p>
     </footer>

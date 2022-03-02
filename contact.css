@@ -3,10 +3,17 @@
 body {
     background-color: black;
     margin: 0;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    min-height: 100vh;
 }
 
 main {
-    color:limegreen;
+    color:whitesmoke;
+    font-family: 'Source Code Pro', monospace;
+
 }
 
 #navbar {
@@ -55,6 +62,18 @@ main {
 #logo-container {
     background:linear-gradient(darkgreen 0 1%, rgba(30,30,30) 20% 80%, darkgreen 99% 100%);
 }
+#contact-me {
+    display:flex;
+    flex-direction: column;
+    
+}
+
+#contact-me a {
+    text-decoration: none;
+    color:#4298f5;
+    font-size: 20px;
+    margin-left: 40px;
+}
 
 
 /***FOOTER***/
@@ -64,8 +83,6 @@ footer {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
-    bottom:0;
     width: 100%;
 }
 
@@ -85,6 +102,120 @@ span {
     font-family: 'Source Code Pro', monospace;
 }
 
+#text {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#text h2 {
+    text-shadow: 6px 6px 10px skyblue;
+    margin-bottom: 50px;
+    color: #4298f5;
+    font-size: 40px;
+}
+#text p {
+    padding:20px;
+}
+
+#text h2:hover, #contact-me a:hover, #message:hover {
+    animation-name: nudge;
+    animation-duration: 1.5s;
+}
+#contact-me {
+    line-height: 60px;
+    margin-bottom: 50px;
+}
+
+#contact-me a:hover, #message:hover {
+    text-shadow: 8px 8px 15px skyblue;
+}
+
+
+#message { 
+    width: 160px;
+    background-color: #4298f5;
+    border-radius: 10px;
+    padding:10px;
+    padding-left: 3px;
+    margin-left: 40px;
+    background-color: black;
+    color:#4298f5;
+    border:none;
+    font-family: 'Source Code Pro', monospace;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hidden {
+    display:none;
+}
+
+#message-modal {
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background-color: rgba(30, 30, 30, 0.9);
+
+}
+
+#modal-container {
+    width:250px;
+    height:400px;
+    background:linear-gradient(rgba(30 30 30), #4298f5,rgba(30 30 30));
+    display:flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+}
+
+#close-modal {
+    position: relative;
+    bottom:400px;
+    left:224px;
+    background-color: black;
+    border-radius: 10px;
+    color:skyblue;
+    border:none;
+}
+.modal-message {
+    width:80%;
+    height:40%;
+    background-color: whitesmoke;
+    text-align: justify;
+}
+.modal-email, .modal-name {
+    background-color: whitesmoke;
+    height:30px;
+}
+#person-message {
+    border:none;
+    background-color: whitesmoke;
+    width:90%
+}
+#modal-container div {
+    border:1px solid skyblue;
+}
+#modal-container input {
+    border: none;
+}
+
+
+
+
+@keyframes nudge {
+    from {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(20px)
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
 
 @media screen and (min-width:1280px) {
     .fa-brands, .fa-solid {
@@ -96,5 +227,17 @@ span {
     }
     #logo {
         width:11rem;
+    }
+    #text h2 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #text p, #contact-me {
+        padding:0 60px;
+    }
+    #text p {
+        max-width: 700px;
     }
 }
