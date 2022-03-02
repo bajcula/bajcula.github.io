@@ -76,9 +76,9 @@ body {
 }
 .carousel-indicators {
 	text-align: center;
-	margin: 0 auto;
-	margin-top:-65px;
+	margin: -70px auto 0 auto;
 	opacity: 0.3;
+	z-index: 2;
 }
 .carousel-indicators button {
 	cursor: pointer;
@@ -113,16 +113,18 @@ h1 {
 	width: 75%;
 	background: rgb(28, 69, 28);
 	padding: 10px;
+	padding-bottom: 0;
 	border-radius: 10px;
 	box-sizing: border-box;
 	box-shadow: 2px 2px lime;
 	width:600px;
 	height: 400px;
 	overflow: hidden;
+	z-index: 1;
 }
 
 .carousel-images img {
-
+	display:none;
     max-height: 100%;
     min-width: 100%;
     object-fit: fill;
@@ -139,6 +141,7 @@ h1 {
 	border-radius: 50%;
 	text-align: center;
 	box-shadow: 1px 1px lime;
+	z-index: 1;
 }
 .carousel-button:hover {
 	cursor: pointer;
@@ -158,12 +161,12 @@ h1 {
 	background: rgb(28, 69, 28);
 	width:50%;
 	max-width: 500px;
-	height:24px;
+	height:30px;
 	text-align: center;
 	color: white;
 	font-weight: 700;
 	letter-spacing: 1px;
-	padding-bottom: 7px;
+	padding-top: 8px;
 	font-weight: bolder;
 	box-shadow: 1px 1px lime;
 	border-radius: 0 0 15px 15px;
