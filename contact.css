@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;700&display=swap');
 
 body {
     background-color: black;
@@ -7,6 +7,7 @@ body {
     justify-content: space-between;
     flex-direction: column;
     font-family: 'Source Code Pro', monospace;
+    font-weight: 200;
     min-height: 100vh;
 }
 
@@ -56,7 +57,6 @@ main {
     width:7rem;
     height:60%;
     margin: 6px;
-    
 }
 
 #logo-container {
@@ -65,7 +65,6 @@ main {
 #contact-me {
     display:flex;
     flex-direction: column;
-    
 }
 
 #contact-me a {
@@ -105,14 +104,16 @@ span {
 #text {
     padding: 20px;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 200;
 }
 
 #text h2 {
     text-shadow: 6px 6px 10px skyblue;
+    margin-left: 20px;
     margin-bottom: 50px;
     color: #4298f5;
     font-size: 40px;
+    font-weight: 200;
 }
 #text p {
     padding:20px;
@@ -139,6 +140,7 @@ span {
     padding:10px;
     padding-left: 3px;
     margin-left: 40px;
+    margin-top: 10px;
     background-color: black;
     color:#4298f5;
     border:none;
@@ -154,16 +156,18 @@ span {
 
 #message-modal {
     position:fixed;
-    width:100%;
-    height:100vh;
+    height:100%;
     background-color: rgba(30, 30, 30, 0.9);
-
+    display:none;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #modal-container {
-    width:250px;
-    height:400px;
-    background:linear-gradient(rgba(30 30 30), #4298f5,rgba(30 30 30));
+    width:100vw;
+    height:50%;
+    background:linear-gradient(rgba(30 30 30), #4298f5 ,rgba(30 30 30));
     display:flex;
     flex-direction: column;
     place-items: center;
@@ -171,19 +175,22 @@ span {
 }
 
 #close-modal {
-    position: relative;
-    bottom:400px;
-    left:224px;
-    background-color: black;
+    position: absolute;
+    right:1%;
+    top:26%;
+    background-color: whitesmoke;
     border-radius: 10px;
-    color:skyblue;
+    color:black;
     border:none;
+    cursor: pointer;
 }
 .modal-message {
     width:80%;
     height:40%;
     background-color: whitesmoke;
     text-align: justify;
+    overflow: auto;
+    resize: vertical;
 }
 .modal-email, .modal-name {
     background-color: whitesmoke;
@@ -192,17 +199,29 @@ span {
 #person-message {
     border:none;
     background-color: whitesmoke;
-    width:90%
+    width:90%;
+
 }
 #modal-container div {
-    border:1px solid skyblue;
+    border:2px double black;
 }
 #modal-container input {
     border: none;
+    background-color: whitesmoke;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    color:rgb(93, 88, 88);
+    
 }
 
+#modal-submit {
+    width: 150px;
+    height: 40px;
+}
 
-
+input:focus {
+    outline:none;
+}
 
 @keyframes nudge {
     from {
@@ -216,6 +235,36 @@ span {
     }
 }
 
+
+
+
+
+
+@media screen and (min-width:481px) {
+    .modal-email, .modal-name {
+        background-color: whitesmoke;
+        height:10%;
+        width:40%;
+    }
+    #modal-container input {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #text p, #contact-me {
+        padding:0 60px;
+    }
+    .modal-email, .modal-name {
+        background-color: whitesmoke;
+        height:60px;
+        width:40%;
+        
+    }
+    #message-modal input {
+        font-size: 18px;
+    }
+}
 
 @media screen and (min-width:1280px) {
     .fa-brands, .fa-solid {
@@ -231,13 +280,13 @@ span {
     #text h2 {
         font-size: 60px;
     }
-}
-
-@media screen and (min-width:768px) {
-    #text p, #contact-me {
-        padding:0 60px;
-    }
     #text p {
-        max-width: 700px;
+        font-size: 24px;
     }
+    #modal-submit {
+        width: 250px;
+        height: 60px;
+    }
+
 }
+    

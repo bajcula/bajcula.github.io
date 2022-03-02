@@ -178,16 +178,15 @@ main {
       font-size: 40px;
       padding-top:25px;
   }
-
   
 .card__face--front i {
     font-size: 20px;
     color:rgb(120, 214, 255);
 }
 
-#download-resume {
+#resume {
     display: inline;
-    margin: 50px auto 0px auto;
+    margin: 0px auto 40px auto;
     position: center;
     background-color: rgba(30 30 30);
     color: lime;
@@ -200,11 +199,11 @@ main {
     text-align: center;
 }
 
-#download-resume:hover {
+#resume:hover {
     box-shadow: 0px 5px 45px 10px rgba(140, 255, 0, 0.5)
 }
 
-#download-resume:active {
+#resume:active {
     color: white;
     box-shadow: 0px 5px 45px 10px white;
 }
@@ -212,9 +211,7 @@ main {
 
 @media (max-width: 280px) {
     #about-me {
-        font-size: 0.6rem;
-        padding-top: 120px;
-        
+        font-size: 0.6rem;        
     }
 }
 
@@ -251,7 +248,7 @@ and (max-device-width: 480px) {
         border: 3px double limegreen;
         padding: 5rem;
     }
-    #download-resume {
+    #resume {
         height: 100px;
         width: 30%;
         font-size: 16px;
@@ -333,7 +330,7 @@ and (max-device-width: 480px) {
     #links {
         margin: 10px;
     }
-    #download-resume {
+    #resume {
         width: 500px;
         font-size: 22px;
     }

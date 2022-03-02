@@ -32,12 +32,16 @@ body {
 }
 
 #links {
-    
     margin: 10px;
     display:flex;
     justify-content: space-evenly;
+    align-items: center;
     background: transparent;
+    font-size: 20px;
 }
+/* #nav-resume {
+
+} */
 #nav-logo {
     display:flex;
     align-items: center;
