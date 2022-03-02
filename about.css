@@ -68,9 +68,12 @@ body {
     width:7rem;
     height:60%;
     margin: 6px;
-    background:linear-gradient(darkgreen 0 1%, rgba(30,30,30) 20% 80%, darkgreen 99% 100%);
+    
 }
 
+#logo-container {
+    background:linear-gradient(darkgreen 0 1%, rgba(30,30,30) 20% 80%, darkgreen 99% 100%);
+}
 
 
 
@@ -332,6 +335,9 @@ and (max-device-width: 480px) {
     #download-resume {
         width: 500px;
         font-size: 22px;
+    }
+    #logo {
+        width:11rem;
     }
 }
   
