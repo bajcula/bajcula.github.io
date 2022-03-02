@@ -5,8 +5,8 @@ Project #1 at General Assembly.
 
 Personal website displaying my projects and who I am as a Software Engineer.
 
-GitHub link for the website:
-bajcula.github.io
+Website link:
+branislavtodorovic.com
 
 *HTML
 *CSS

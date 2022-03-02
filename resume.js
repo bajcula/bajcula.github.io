@@ -1,2 +1,4 @@
-// $("#download-resume").on('click', downloadResume)
+$("#download-resume").on('click', () => {
+    alert('COMING SOON')
+})
 

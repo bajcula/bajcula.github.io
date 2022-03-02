@@ -1,5 +1,10 @@
 console.log("about js running")
 
+$("#resume").on('click', () => {
+    alert('COMING SOON')
+})
+
+
 const flipping1 = () => {
     $("#1").toggleClass("is-flipped")
 }
