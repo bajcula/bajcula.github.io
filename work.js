@@ -71,7 +71,7 @@ async function codewarsRank() {
     <p>
     Honor points: ${data.honor}<br>
     Clan: ${data.clan}<br>
-    Overall rank: ${data.ranks.overall.rank}<br>
+    Overall rank: ${data.ranks.overall.name}<br>
     Overall score: ${data.ranks.overall.score}<br>
     Languages: <span id='lang'></span><br>
     Code challenges completed: ${data.codeChallenges.totalCompleted}
