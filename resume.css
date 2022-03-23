@@ -64,8 +64,9 @@ h3 {
 }
 
 #logo-container {
-    background:linear-gradient(darkgreen 0 1%, rgba(30,30,30) 20% 80%, darkgreen 99% 100%);
+    background-color: rgb(148, 148, 148, 0.8);
 }
+
 
 main {
     text-align: center;
