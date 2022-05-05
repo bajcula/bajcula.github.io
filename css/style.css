@@ -246,7 +246,7 @@ a, a:hover, a:focus, button, button:focus {
     Home
 =============================*/
 .header-bg-img {
-	background-image: url(../images/chi-sunset-home.jpeg);
+	background-image: url(../images/chi_downtown.jpeg);
 	position: relative;
 	background-size: cover;
 	background-position: center center;
